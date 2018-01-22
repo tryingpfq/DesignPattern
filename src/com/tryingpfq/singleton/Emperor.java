@@ -1,5 +1,6 @@
 package com.tryingpfq.singleton;
 //懒汉式 线程不安全
+
 public class Emperor {
 	private static Emperor emperor=null;
 	
