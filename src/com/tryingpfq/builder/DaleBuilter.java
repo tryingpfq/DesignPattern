@@ -1,5 +1,6 @@
 package com.tryingpfq.builder;
 
+//构造者
 public class DaleBuilter extends Builder{
 	//具体构造者
 	private Product product=new Product();
