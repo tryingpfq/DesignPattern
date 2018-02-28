@@ -9,7 +9,7 @@ public class DaleBuilter extends Builder{
 	}
 	@Override
 	public void bulidMouse() {
-		product.setMouse("戴尔 鼠标");	
+		product.setMouse("戴尔 鼠标");	 
 	}
 	@Override
 	public void bulidDisplay() {
