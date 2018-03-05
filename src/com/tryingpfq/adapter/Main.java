@@ -10,6 +10,7 @@ public class Main {
 		Honor10 honor10 =new Honor10(new AndroidCharger());
 		honor10.charge();
 		
+		
 		System.out.println("-----------------");
 		
 		Adapter adapter =new Adapter(new AndroidCharger());
