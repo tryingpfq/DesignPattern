@@ -1,5 +1,6 @@
 package com.tryingpfq.simpleFactory;
-//简单工厂模式
+//简单工厂模式的一个操作类
+//测试
 public class Operation {
     private double _numberA = 0;
 
