@@ -1,5 +1,5 @@
 package com.tryingpfq.simpleFactory;
-
+//简单工厂模式
 public class Operation {
     private double _numberA = 0;
 
