@@ -16,6 +16,7 @@ public class TestFindLove {
             Person person = (Person) new MeiPo().getInsObject(new XiaoXingXing());
             System.out.println("媒婆返回的对象 "+person.getClass());
             person.findLove();
+            person.getSex();
         }catch (Exception e){
             e.printStackTrace();
         }
