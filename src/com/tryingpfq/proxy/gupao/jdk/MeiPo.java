@@ -28,7 +28,9 @@ public class MeiPo implements InvocationHandler{
         System.out.println("你的性别是："+this.target.getName()+ " 给你找个异性");
         System.out.println("开始进行海选");
         System.out.println("---------------------");
-        this.target.findLove();
+
+        //this.target.findLove();
+        method.invoke(target,args);
         System.out.println("---------------------");
         System.out.println("如果合适的话，就准备办事");
         return null;

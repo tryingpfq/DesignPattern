@@ -1,5 +1,10 @@
 package com.tryingpfq.proxy.gupao.jdk;
 
+import com.tryingpfq.proxy.gupao.owner.TRYMeiPo;
+import sun.misc.ProxyGenerator;
+
+import java.io.FileOutputStream;
+
 /**
  * Created by trying on 2018/9/22.
  * 动态代理基本原理
@@ -16,10 +21,24 @@ public class TestFindLove {
             Person person = (Person) new MeiPo().getInsObject(new XiaoXingXing());
             System.out.println("媒婆返回的对象 "+person.getClass());
             person.findLove();
-            person.getSex();
+            //person.getSex();
+
+            //将这个新生产的对象输出一下
+            byte[] data = ProxyGenerator.generateProxyClass("$Proxy0",new Class[]{Person.class});
+            FileOutputStream os = new FileOutputStream("F:/$Proxy0.class");
+            os.write(data);
+            os.close();
         }catch (Exception e){
             e.printStackTrace();
         }
+
+        //测试自己写的
+ /*       try{
+            Person tryPerson = (Person) new TRYMeiPo().getInsObject(new XiaoXingXing());
+            //tryPerson.findLove();
+        }catch (Exception e){
+            e.printStackTrace();
+        }*/
 
        System.out.println(" test ");
     }
